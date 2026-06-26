@@ -1,5 +1,9 @@
-import type { NextConfig } from "next"
+import type { NextConfig } from "next";
 
-const nextConfig: NextConfig = {}
+const nextConfig: NextConfig = {
+  allowedDevOrigins: [
+    "169.254.207.121",
+  ],
+};
 
-export default nextConfig
+export default nextConfig;
