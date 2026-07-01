@@ -4,11 +4,6 @@ import { Bot, User, Menu } from "lucide-react";
 import { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 
-// import { courses } from "@/data/courses";
-// import { fees } from "@/data/fees";
-// import { scholarships } from "@/data/scholarships";
-// import { faqs } from "@/data/faqs";
-// import { admissionInfo } from "@/data/admission";
 
 import { knowledgeBase } from "@/data/knowledge";
 
@@ -74,7 +69,18 @@ const handleSend = async (quickMessage?: string) => {
       text: userMessage,
     },
   ]);
+  const lowerMessage = userMessage.toLowerCase();
 
+if (
+  
+  lowerMessage.includes("admission form") ||
+  lowerMessage.includes("apply") ||
+  lowerMessage.includes("apply now") ||
+  lowerMessage.includes("register") ||
+  lowerMessage.includes("enroll")
+) {
+  setShowLeadForm(true);
+}
   // Show typing indicator
   setIsTyping(true);
 
@@ -289,7 +295,7 @@ font-medium
 </button>
 
 <button
-  onClick={() => handleSend("What is B.Tech fees?")}
+  onClick={() => handleSend("What is the fee structure for this institute?")}
 className="
 bg-white
 px-5 py-3

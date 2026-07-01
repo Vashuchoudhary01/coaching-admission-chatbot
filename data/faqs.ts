@@ -1,8 +1,9 @@
 export const faqs = [
   {
-    question: "What courses are available?",
-    answer: "We offer BCA, BBA and MCA programs.",
-  },
+  question: "What courses are available?",
+  answer:
+    "Our institute offers coaching for Class 10, Class 11, and Class 12 Board Exams, JEE (Main & Advanced), NEET, Foundation Programs for Classes 8–10, CUET Preparation, and Intensive Crash Courses with regular mock tests, doubt-solving sessions, and expert faculty guidance.",
+},
 
   {
     question: "What is the admission process?",
